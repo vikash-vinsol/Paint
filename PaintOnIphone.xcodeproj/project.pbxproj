@@ -20,7 +20,7 @@
 		EBCE655B1835F97B00DD7F04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBCE653A1835F97B00DD7F04 /* UIKit.framework */; };
 		EBCE65631835F97B00DD7F04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBCE65611835F97B00DD7F04 /* InfoPlist.strings */; };
 		EBCE65651835F97B00DD7F04 /* PaintOnIphoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCE65641835F97B00DD7F04 /* PaintOnIphoneTests.m */; };
-		EBCE65701835FCDA00DD7F04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCE656F1835FCDA00DD7F04 /* MainViewController.m */; };
+		EBCE65701835FCDA00DD7F04 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCE656F1835FCDA00DD7F04 /* CanvasViewController.m */; };
 		EBCE65871835FDC100DD7F04 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCE65711835FDC100DD7F04 /* b.png */; };
 		EBCE65881835FDC100DD7F04 /* Black.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCE65721835FDC100DD7F04 /* Black.png */; };
 		EBCE65891835FDC100DD7F04 /* Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCE65731835FDC100DD7F04 /* Blue.png */; };
@@ -74,8 +74,8 @@
 		EBCE65601835F97B00DD7F04 /* PaintOnIphoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaintOnIphoneTests-Info.plist"; sourceTree = "<group>"; };
 		EBCE65621835F97B00DD7F04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBCE65641835F97B00DD7F04 /* PaintOnIphoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaintOnIphoneTests.m; sourceTree = "<group>"; };
-		EBCE656E1835FCDA00DD7F04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		EBCE656F1835FCDA00DD7F04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EBCE656E1835FCDA00DD7F04 /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		EBCE656F1835FCDA00DD7F04 /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		EBCE65711835FDC100DD7F04 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
 		EBCE65721835FDC100DD7F04 /* Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black.png; sourceTree = "<group>"; };
 		EBCE65731835FDC100DD7F04 /* Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blue.png; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 				EBCE65451835F97B00DD7F04 /* AppDelegate.h */,
 				EBCE65461835F97B00DD7F04 /* AppDelegate.m */,
 				EBCE65481835F97B00DD7F04 /* Main.storyboard */,
-				EBCE656E1835FCDA00DD7F04 /* MainViewController.h */,
-				EBCE656F1835FCDA00DD7F04 /* MainViewController.m */,
+				EBCE656E1835FCDA00DD7F04 /* CanvasViewController.h */,
+				EBCE656F1835FCDA00DD7F04 /* CanvasViewController.m */,
 				EBCE659D18361B9300DD7F04 /* SettingViewController.h */,
 				EBCE659E18361B9300DD7F04 /* SettingViewController.m */,
 				EBCE65511835F97B00DD7F04 /* Images.xcassets */,
@@ -343,7 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBCE65471835F97B00DD7F04 /* AppDelegate.m in Sources */,
-				EBCE65701835FCDA00DD7F04 /* MainViewController.m in Sources */,
+				EBCE65701835FCDA00DD7F04 /* CanvasViewController.m in Sources */,
 				EBCE65431835F97B00DD7F04 /* main.m in Sources */,
 				EBCE659F18361B9300DD7F04 /* SettingViewController.m in Sources */,
 			);
@@ -558,6 +558,7 @@
 				EBCE656A1835F97B00DD7F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBCE656B1835F97B00DD7F04 /* Build configuration list for PBXNativeTarget "PaintOnIphoneTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +567,7 @@
 				EBCE656D1835F97B00DD7F04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

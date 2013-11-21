@@ -10,7 +10,7 @@
 
 @protocol SettingsViewControllerDelegate <NSObject>
 
-- (void)closeSettings:(id)sender;
+- (void)closeSettings:(NSDictionary *)settingDict;
 
 @end
 

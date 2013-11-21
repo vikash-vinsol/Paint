@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SettingViewController.h"
 
-@interface MainViewController : UIViewController<SettingsViewControllerDelegate>
+@interface CanvasViewController : UIViewController<SettingsViewControllerDelegate>
 {
     CGPoint lastPoint;
     CGFloat red;

@@ -20,7 +20,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -28,13 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -60,7 +53,15 @@
 
 - (IBAction)closePressed:(id)sender
 {
-    [self.delegate closeSettings:self];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          [NSNumber numberWithFloat:red], @"red",
+                          [NSNumber numberWithFloat:blue], @"blue",
+                          [NSNumber numberWithFloat:green], @"green",
+                          [NSNumber numberWithFloat:opacity], @"opacity",
+                          [NSNumber numberWithFloat:brush], @"brush",
+                          nil];
+    
+    [self.delegate closeSettings:dict];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

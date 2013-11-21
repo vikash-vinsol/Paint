@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Vikash Soni. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "CanvasViewController.h"
 
-@interface MainViewController ()
+@interface CanvasViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation CanvasViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -127,7 +127,6 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Image was successfully saved in photoalbum"  delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Close", nil];
         [alert show];
     }
-
 }
 
 - (IBAction)resetPressed:(id)sender
@@ -204,14 +203,13 @@
     settingsVC.blue = blue;
 }
 
-- (void)closeSettings:(id)sender
+- (void)closeSettings:(NSDictionary *)settingDict
 {
-    brush = ((SettingViewController*)sender).brush;
-    opacity = ((SettingViewController*)sender).opacity;
-    red = ((SettingViewController*)sender).red;
-    green = ((SettingViewController*)sender).green;
-    blue = ((SettingViewController*)sender).blue;
-    [self dismissViewControllerAnimated:YES completion:nil];
+    brush = [[settingDict objectForKey:@"brush"] floatValue];
+    red   =  [[settingDict objectForKey:@"red"] floatValue];
+    blue  = [[settingDict objectForKey:@"blue"] floatValue];
+    green = [[settingDict objectForKey:@"green"] floatValue];
+    opacity =  [[settingDict objectForKey:@"opacity"] floatValue];
 }
 
 @end
